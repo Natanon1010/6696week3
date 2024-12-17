@@ -20,25 +20,16 @@
     <title>ตัวอย่าง 1</title>
 </head>
 <body>
-    <h1>โปรแกรม ภาษา HTML</h1>
+    <h1>โปรแกรม ภาษา PHP สร้างฟอร์มข้อมูล</h1>
     664485015 นายณฐนนท์ ชุมเพ็ญ <br>
     หมู่เรียน 66/96 <br>
-    <?php
-        // ทดสอบ comment ภาษา php
-        echo "<h2>สวัสดีปีใหม่</h2>";
-        echo "<br>ขอให้ทุกคนประสบแต่ความสุข";
-        // สร้างตัวแปร
-        $name="ณฐนนท์";
-        $surname="ชุมเพ็ญ";
-        echo "<br>ชื่อของคุณคือ".$name." ".$surname;
-        // ทดสอบตัวแปร ตัวเลข
-        $x=15;
-        $y=7;
-        $z=$x+$y;
-        echo "<br>ค่าผลบวกเท่ากับ".$z;
-        $z=$x*$y;
-        echo"<br>ค่าผลคูณเท่ากับ".$z;
+    <h2>โปรแกรมคำนวณปริมาณปูนที่ต้องใช้</h2>
 
-    ?>
+    <form action="ex10.php" method="POST">
+        กว้าง <input type="text" name="w"><br>
+        ยาว <input type="text" name="h"><br>
+        สูง <input type="text" name="l"><br>
+        <input type="submit" value="กดคำนวณข้อมูล"><br>
+    </form>
 </body>
 </html>
